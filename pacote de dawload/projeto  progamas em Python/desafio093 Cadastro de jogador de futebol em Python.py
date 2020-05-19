@@ -14,6 +14,12 @@ print(estrutura)
 print('-='*30)
 for k, v in estrutura.items():                      # para cada titulo (k) moste seu conteudo (v)
     print(f'O campo {k} tem o valor {v}')
+print('-='*30)
+print(f'O jogador {estrutura["nome"]} jogou {quantidade_partidas} partidas')
+for i, v in enumerate(estrutura['gols']):   #gol de cada partida, pegar da lista usando enumarate 
+    print(f'      -> Na partida {i+1}, fez {v} gols.')
+print(f'Foi um total de {estrutura["total"]} gols')
+
 
 
 
